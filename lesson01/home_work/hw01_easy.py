@@ -8,7 +8,7 @@ firstNumber = number // 100
 secondNumber = ((number % 100) // 10)
 thirdNumber = number %10
 
-print(str(firstNumber) + " " + str(secondNumber) + " " + str(thirdNumber))
+print(firstNumber, secondNumber, thirdNumber)
 
 # Задача-2: Исходные значения двух переменных запросить у пользователя.
 # Поменять значения переменных местами. Вывести новые значения на экран.
