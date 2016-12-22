@@ -9,8 +9,8 @@
 # 4.  арбуз
 
 a = ["яблоко", "банан", "киви", "арбуз"]
-for i, value in enumerate(a, 1):
-	print(i, value)
+for v, i in enumerate(a, 1):
+	print("{0}. {1:>10}".format(v, i))
 	
 # Подсказка: использует метод .format()
 
@@ -36,11 +36,6 @@ for i in a:
 		i = i / 4
 		c.append(i)
 	else:
-		continue
-for i in b:
-	if i % 2 == 0:
-		i = i / 4
+		i = i*2
 		c.append(i)
-	else:
-		continue
 print(c)

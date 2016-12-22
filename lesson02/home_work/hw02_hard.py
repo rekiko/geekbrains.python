@@ -47,25 +47,52 @@ date = '-2.10.3001'
 # Вход: 11
 # Выход: 5 3
 
-n = int(input("Введите номер квартиры: "))
-t = []
-tower = []
-a = 1
-i = 1
-ind = n - 1
-while a <= n:
-  if i <= a:
-    t.append(a)
-    t.append(i)
-    tower.append(t)
-    i = i + 1
-    t = []
+x = input("Введите номер квартиры: ")
+x = int(x)
+n = 1	#floor
+m = 1	#num 
+stage = ()
+place = ()
+temp = ()
+while m <= x:
+  m = m + n
+  n = n + 1
+  if m == x: 
+    stage = n
+    place = n
   else:
-    a = a + 1
-    i = 1
-    
-res = []
-res = tower[ind]
-print(res)
-print("Этаж — ", str(res[0]))
-print("Порядковый номер — ", str(res[1]))
+    stage = n
+    temp = m - x
+    place = n - temp
+stage = stage - 1
+print("Этаж: ", stage)
+print("Расположение: ", place)
+
+
+
+
+
+
+
+#n = int(input("Введите номер квартиры: "))
+#t = []
+#tower = []
+#a = 1
+#i = 1
+#ind = n - 1
+#while a <= n:
+#  if i <= a:
+#    t.append(a)
+#    t.append(i)
+#    tower.append(t)
+#    i = i + 1
+#    t = []
+#  else:
+#    a = a + 1
+#    i = 1
+#    
+#res = []
+#res = tower[ind]
+#print(res)
+#print("Этаж — ", str(res[0]))
+#print("Порядковый номер — ", str(res[1]))
